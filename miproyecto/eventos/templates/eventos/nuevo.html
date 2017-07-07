@@ -1,13 +1,16 @@
-{% extends 'eventos/productos.html' %}
+{% load staticfiles %}
+ <html>
+        <head>
+            <title>{{producto.title}}</title>
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+            <link rel="stylesheet" href="{% static 'css/nuevo.css' %}">
+        </head>
+<div>
+    
+    <p>{{producto.tipo}}</p>
+    <p>{{producto.text}}</p>
 
-    {% block content %}
-        <div class="post">
-            {% if post.published_date %}
-                <div class="date">
-                    {{ post.published_date }}
-                </div>
-            {% endif %}
-            <h1>{{ post.title }}</h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endblock %}
+</div>
+
+</html>

@@ -7,10 +7,11 @@
 <body>
 <ul>
     {% for producto in productos %}
-        <li>{{ producto.Tipo }} <strong>{{ producto.title }}</strong></li>
+        <li>{{ producto.tipo }} <strong>{{ producto.title }}</strong></li>
+        <h1><a href="{% url 'eventos.nuevo' %}"> LINK </a></h1>
     {% endfor %}.
 </ul>
-  <h1><a href="{% url 'eventos.views.nuevo'%}">LINK</a></h1>
+
 </body>
  
 </html>

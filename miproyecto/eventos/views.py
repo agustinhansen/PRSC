@@ -6,5 +6,6 @@ def listar_productos(request):
     return render(request, 'eventos/productos.html', {'productos': productos})
 
 def nuevo(request):
-    return render(request, 'blog/nuevo.html', {'productos': productos})
+    prod = Productos.objects.get(pk=1)
+    return render(request, 'eventos/nuevo.html', {'producto': prod})
 
