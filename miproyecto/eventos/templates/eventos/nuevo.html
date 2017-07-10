@@ -1,16 +1,21 @@
 {% load staticfiles %}
+
  <html>
         <head>
-            <title>{{producto.title}}</title>
+            <title> Productos Weddings </title>
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
             <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
             <link rel="stylesheet" href="{% static 'css/nuevo.css' %}">
+            <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
         </head>
+<body>
 <div>
-    
-    <p>{{producto.tipo}}</p>
+    <h1> {{producto.title}} </h1>  
     <p>{{producto.text}}</p>
-
+    <br>
+    <div align="center"><img src="http://www.marcomario.com/uploads/products/411-1.jpg"  WIDTH=178 HEIGHT=180 BORDER=2 VSPACE=3 HSPACE=3></div>
+  
 </div>
+</body>
 
 </html>
